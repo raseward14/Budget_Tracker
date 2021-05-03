@@ -9,7 +9,7 @@ const config = {
     path: __dirname + '/dist',
     filename: '[name].bundle.js',
   },
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -27,7 +27,7 @@ const config = {
   plugins: [
     new WebpackPwaManifest({
       fingerprints: false,
-      name: 'Budget_Tracker',
+      name: 'Budget Tracker',
       short_name: 'Budget',
       description: 'An application that allows you to track your budget.',
       background_color: '#01579b',
@@ -36,7 +36,10 @@ const config = {
       start_url: '/',
       icons: [
         {
-          src: path.resolve('assets/images/icons/icon-192x192.png'),
+          src: path.resolve(
+            __dirname, 
+            'assets/images/icons/icon-512x512.png'
+            ),
           sizes: [96, 128, 192, 256, 384, 512],
           destination: path.join('assets', 'icons'),
         },
