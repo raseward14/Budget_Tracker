@@ -9,9 +9,7 @@ const FILES_TO_CACHE = [
     '/dist/assets/icons/icon_192x192.png',
     '/dist/assets/icons/icon_256x256.png',
     '/dist/assets/icons/icon_384x384.png',
-    '/dist/assets/icons/icon_512x512.png',
-    'https://fonts.googleapis.com/css?family=Istok+Web|Montserrat:800&display=swap',
-    'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css',
+    '/dist/assets/icons/icon_512x512.png'
   ];
   
   const PRECACHE = 'precache-v1';
