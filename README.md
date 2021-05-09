@@ -12,10 +12,25 @@ IndexedDB is used to cache transactions while the application is offline. The me
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
+* [Technologies](#Technologies)
 
 ## Usage
 * **The Finished Product**  
 ![Budget Tracker](public/assets/images/snapshot.png)
+
+## Technologies
+* Webpack
+* Webpack Plugin PWA Mainfest
+* Service Workers
+* babel
+* node.js
+* compression
+* express.js
+* MongoDB
+* Mongo Atlas
+* mongoose
+* IndexedDB
+* PWA
 
 ## Credits
 Here are a few resources that helped me get this project knocked out!
