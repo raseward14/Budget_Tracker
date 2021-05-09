@@ -3,10 +3,10 @@ const path = require("path");
 
 const config = {
   entry: {
-    app: path.resolve(__dirname) + "./assets/js/index.js",
+    app: path.resolve(__dirname, "./assets/js/index.js"),
   },
   output: {
-    path: __dirname + "/dist",
+    path: path.resolve(__dirname + "/dist"),
     filename: "[name].bundle.js",
   },
   mode: "production",
