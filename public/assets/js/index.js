@@ -1,4 +1,4 @@
-const db = require("./db");
+import { saveRecord } from "./indexedDB";
 
 let transactions = [];
 let myChart;
