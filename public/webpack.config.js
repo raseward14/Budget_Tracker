@@ -3,11 +3,11 @@ const path = require("path");
 
 const config = {
   entry: {
-    app: "./assets/js/index.js",
+    app: path.resolve(__dirname) + "./assets/js/index.js",
   },
   output: {
     path: __dirname + "/dist",
-    filename: "app.bundle.js",
+    filename: "[name].bundle.js",
   },
   mode: "production",
   module: {
@@ -36,7 +36,7 @@ const config = {
       start_url: "/",
       icons: [
         {
-          src: path.resolve("public/assets/images/icons/icon-512x512.png"),
+          src: path.resolve("assets/images/icons/icon-512x512.png"),
           sizes: [72, 96, 128, 192, 384, 512],
           destination: path.join("assets", "icons"),
         },
