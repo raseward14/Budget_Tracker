@@ -41,7 +41,7 @@ const config = {
             __dirname, 
             'assets/images/icons/icon-512x512.png'
             ),
-          sizes: [96, 128, 192, 256, 384, 512],
+          sizes: [192, 512],
           destination: path.join('assets', 'icons'),
         },
       ],

@@ -4,6 +4,7 @@
   "description": "A Budget Tracker application that allows for offline access and functionality. As a user, add expenses and deposits to your budget with or without a connection. When entering transactions offline, they will populate the total when brought back online.",
   "main": "server.js",
   "scripts": {
+    "build": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "lite-server": "lite-server"
@@ -27,6 +28,8 @@
   },
   "keywords": [],
   "devDependencies": {
-    "webpack-pwa-manifest": "^4.3.0"
+    "webpack-pwa-manifest": "^4.3.0",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
   }
 }

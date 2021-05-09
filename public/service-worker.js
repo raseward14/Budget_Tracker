@@ -1,19 +1,16 @@
+const PRECACHE = 'precache-v1';
+const RUNTIME = 'runtime';
+
 const FILES_TO_CACHE = [
     '/',
     '/index.html',
+    '/manifest.json',
     '/assets/css/styles.css',
     '/dist/manifest.json',
     '/dist/app.bundle.js',
-    '/dist/assets/icons/icon_96x96.png',
-    '/dist/assets/icons/icon_128x128.png',
     '/dist/assets/icons/icon_192x192.png',
-    '/dist/assets/icons/icon_256x256.png',
-    '/dist/assets/icons/icon_384x384.png',
-    '/dist/assets/icons/icon_512x512.png'
+    '/dist/assets/icons/icon_512x512.png',
   ];
-  
-  const PRECACHE = 'precache-v1';
-  const RUNTIME = 'runtime';
   
   self.addEventListener('install', (event) => {
     event.waitUntil(

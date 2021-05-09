@@ -14,6 +14,9 @@ let db;
 function openDb() {
   console.log("openDb...");
   const request = indexedDB.open("budget", 1);
+
+
+
   request.onsuccess = (e) => {
     db = this.result;
     console.log("openDb complete!");
@@ -40,7 +43,7 @@ function openDb() {
     objectStore.createIndex("name", "name", { unique: false });
     // key values will look like this
     // key: 1 => value: +10
-    transactionData.forEach((transaction) => {
+    const transactionData.forEach((transaction) => {
       objectStore.add(transaction);
     });
   };
@@ -48,7 +51,7 @@ function openDb() {
 
 // READWRITE MODE- IDBDatabase.transaction(storeNames or transactions, mode)
 // save offline object to indexedDB
-async function saveRecord(transaction) {
+function saveRecord(transaction) {
   // write to the indexed db, returns a transaction object
   const objectStore = db
     .transaction(["transactions"], "readwrite")
@@ -62,14 +65,15 @@ async function saveRecord(transaction) {
     console.log("error!");
   };
 
-  await objectStore.put(transaction);
-  await transaction.done;
+  objectStore.put(transaction);
+  transaction.done;
+  // return objectStore;
 }
 
 // retrieve data from indexedDB
-async function checkDatabase() {
+function checkDatabase() {
   // get all items from a store
-  const items = await db.transaction([storeName], 'readwrite').objectStore(storeName).getAll();
+  const items = db.transaction([storeName], 'readwrite').objectStore(storeName).getAll();
 
   items.onsuccess = () => {
     if (result.length > 0) {

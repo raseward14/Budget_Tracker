@@ -1,3 +1,5 @@
+const db = require("./db");
+
 let transactions = [];
 let myChart;
 
