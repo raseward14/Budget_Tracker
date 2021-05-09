@@ -15,7 +15,7 @@ IndexedDB is used to cache transactions while the application is offline. The me
 
 ## Usage
 * **The Finished Product**  
-![Budget Tracker](assets/images/snapshot.png)
+![Budget Tracker](public/assets/images/snapshot.png)
 
 ## Credits
 Here are a few resources that helped me get this project knocked out!
